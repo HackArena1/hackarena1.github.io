@@ -7,11 +7,6 @@
     box-sizing: inherit;
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
 
 * {
     box-sizing: border-box;
@@ -19,8 +14,10 @@ body {
     font-display: swap;
     font-weight: 400;
 }
-
+html,
 body {
+    margin: 0;
+    padding: 0;
     background: #141213;
 }
 
@@ -451,5 +448,3 @@ footer {
     color: white;
     font-family: monospace;
 }
-
-
