@@ -219,7 +219,7 @@ td {
 
 .col {
     margin: auto;
-    display: inline-block;
+    
 }
 
 .t1,
@@ -231,6 +231,7 @@ td {
     border: 2px solid #8166cd;
     border-radius: 8px;
     font-size: 22px;
+    display: inline-block;
 }
 
 .t1{
