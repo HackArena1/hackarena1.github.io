@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400|Wallpoet|Corben:700|Abril+Fatface|Alegreya+Sans|Josefin+Sans|Libre+Baskerville&display=swap');
 
 *,
 *:before,
@@ -396,6 +396,9 @@ td {
     margin: 25px;
     font-family: cursive;
     font-size: 20px;
+}
+.more a{
+    color: red; text-decoration: none
 }
 /*ends faq*/
 
