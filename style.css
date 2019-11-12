@@ -152,10 +152,10 @@ h1 {
 
 }
 
-#tracks h1,
-#schedule h1,
-#sponsors h1,
-#faq h1 {
+#tracks h2,
+#schedule h3,
+#sponsors h4,
+#faq h5 {
     text-align: center;
     font-family: 'corben', cursive;
     font-size: 45px;
