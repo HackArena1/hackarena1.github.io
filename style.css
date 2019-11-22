@@ -1,17 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400|Wallpoet|Corben:700|Abril+Fatface|Alegreya+Sans|Josefin+Sans|Libre+Baskerville&display=swap');
 
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
 
 * {
     box-sizing: border-box;
     font-family: sans-serif;
-    font-display: swap;
     font-weight: 400;
 }
 html,
