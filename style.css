@@ -220,7 +220,7 @@ td {
     padding: 10px;
     transition: 0.2s;
     overflow: hidden;
-    border: 2px solid #8166cd;
+    border: 0.2px solid #8166cd;
     border-radius: 8px;
     font-size: 22px;
     display: inline-block;
@@ -242,7 +242,6 @@ td {
 .t2:hover {
     transform: scale(1.07);
     background-color: orange;
-    ;
 }
 
 .sponsor,
