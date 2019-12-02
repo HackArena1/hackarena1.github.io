@@ -374,7 +374,7 @@ section {
 #conference-timeline .timeline-start,
 #conference-timeline .timeline-end {
     display: table;
-    font-family: "Roboto", sans-serif;
+    font-family: monospace;
     font-size: 18px;
     font-weight: 900;
     text-transform: uppercase;
