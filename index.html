@@ -388,7 +388,7 @@
     </footer>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="js/jquery-3.2.1_a68c15cf37228010c55b83347b301316.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         $('.tenu').click(function() {
@@ -403,66 +403,18 @@
 </script>
 -->
 <script type="text/javascript">
-    $('.js-anchor-link').click(function(e) {
-        e.preventDefault();
-        var target = $($(this).attr('href'));
-        if (target.length) {
-            var scrollTo = target.offset().top;
-            $('body, html').animate({
-                scrollTop: scrollTo + 'px'
-            }, 800);
-        }
-    });
+    $(".js-anchor-link").click(function(t){t.preventDefault();var a=$($(this).attr("href"));if(a.length){var e=a.offset().top;$("body, html").animate({scrollTop:e+"px"},800)}});
 </script>
 <script type="text/javascript">
-    $(window).scroll(function() {
-        $('.container p').each(function() {
-            var scrollTop = $(window).scrollTop(),
-                elementOffset = $(this).offset().top,
-                distance = (elementOffset - scrollTop),
-                windowHeight = $(window).height(),
-                breakPoint = windowHeight * 0.9;
-
-            if (distance > breakPoint) {
-                $(this).addClass("more-padding");
-            }
-            if (distance < breakPoint) {
-                $(this).removeClass("more-padding");
-            }
-        });
-    });
+    $(window).scroll(function(){$(".container p").each(function(){var o=$(window).scrollTop(),i=$(this).offset().top-o,n=.9*$(window).height();i>n&&$(this).addClass("more-padding"),i<n&&$(this).removeClass("more-padding")})});
 </script>
 <script>
-    var acc = document.getElementsByClassName("accordion-link");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            /* Toggle between adding and removing the "active" class,
-            to highlight the button that controls the panel */
-            this.classList.toggle("active");
-
-            /* Toggle between hiding and showing the active panel */
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-    }
+    var i,acc=document.getElementsByClassName("accordion-link");for(i=0;i<acc.length;i++)acc[i].addEventListener("click",function(){this.classList.toggle("active");var i=this.nextElementSibling;"block"===i.style.display?i.style.display="none":i.style.display="block"});
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151875817-1"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-151875817-1');
+    function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-151875817-1");
 
 </script>
 
