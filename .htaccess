@@ -1,4 +1,4 @@
-<IfModule mod_expires.c>
+﻿<IfModule mod_expires.c>
   ExpiresActive On
 
   # Images
