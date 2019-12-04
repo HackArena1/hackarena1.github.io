@@ -584,14 +584,18 @@ section {
     margin: auto;
     text-align: center;
 }
-
+.spon{
+    margin: 30px auto;
+    font-size: 18px;
+    font-family: monospace;
+}
 .logoz {
     display: inline-block;
     margin: 30px;
 }
 
 .logoz img {
-    height: 150px;
+    height: 100px;
     transition: 0.3s;
 }
 
