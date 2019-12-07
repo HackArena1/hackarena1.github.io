@@ -228,7 +228,34 @@ section {
     width: 80%;
     margin:
 }
+/*timer*/
 
+
+.container-t {
+  color: #333;
+  text-align: center;
+}
+
+.container-t h1 {
+  font-weight: normal;
+}
+
+.container-t ul li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+color: aqua;
+  text-transform: uppercase;
+}
+
+.container-t ul li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+
+/*ends*/
 /*about*/
 .section {
     margin: 0 auto;

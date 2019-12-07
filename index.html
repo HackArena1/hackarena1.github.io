@@ -15,6 +15,7 @@
     <!--    <link rel="stylesheet" href="css/animate.css" type="text/css">-->
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
 
     <navbar>
@@ -36,6 +37,14 @@
             </div>
             <h4>Where ideas turn into reality...</h4>
         </header>
+        <div class="container-t">
+            <ul>
+                <li><span id="days"></span>days</li>
+                <li><span id="hours"></span>Hours</li>
+                <li><span id="minutes"></span>Minutes</li>
+                <li><span id="seconds"></span>Seconds</li>
+            </ul>
+        </div>
         <div class="clearfix">
             <div class="seprator"><img src="images/des2.png" alt="seprator" title=""></div>
         </div>
@@ -255,7 +264,7 @@
                 <h2>Gold Sponsors</h2>
                 <div class="logoz"><a href="https://www.linode.com/" target="_blank" rel="noreferrer"><img src="images/linode.png" alt="Linode" title="Linode"></a></div>
             </div>
-<!--
+            <!--
             <div class="spon">
                 <h2>Silver Sponsors</h2>
             </div>
@@ -479,5 +488,30 @@
     }
     window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "UA-151875817-1");
 </script>
+<script type="text/javascript">
+    const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
 
-<!--    ends here--></html>
+    let countDown = new Date('Mar 21, 2020 00:00:00').getTime(),
+        x = setInterval(function() {
+
+            let now = new Date().getTime(),
+                distance = countDown - now;
+
+            document.getElementById('days').innerText = Math.floor(distance / (day)),
+                document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+                document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+                document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+            //do something later when date is reached
+            //if (distance < 0) {
+            //  clearInterval(x);
+            //  'IT'S MY BIRTHDAY!;
+            //}
+
+        }, second)
+</script>
+<!--    ends here-->
+</html>
