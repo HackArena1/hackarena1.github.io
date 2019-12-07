@@ -331,7 +331,7 @@ color: aqua;
     margin: 10px;
     border: 1px solid red;
     box-shadow: inset 0 0 20px red;
-    transition: 2s;
+    transition: .4s;
     cursor: pointer;
 }
 
@@ -376,7 +376,8 @@ color: aqua;
 }
 
 .t .name {
-    margin: 10px;
+    font-size: 1rem;
+    margin: 12px;
     padding: 5px;
     text-align: center;
     text-transform: uppercase;
