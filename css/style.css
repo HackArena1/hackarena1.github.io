@@ -767,5 +767,15 @@ footer {
     margin-top: 30px;
     text-align: center;
 }
-
+.to-top{
+    padding: 4px;
+    height: 35px;
+    width: 35px;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
 /*samapt*/
