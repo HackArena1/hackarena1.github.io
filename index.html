@@ -462,19 +462,10 @@
         }
     });
 </script>
-<script type="text/javascript">
-    $(window).scroll(function() {
-        $(".container p").each(function() {
-            var o = $(window).scrollTop(),
-                i = $(this).offset().top - o,
-                n = .9 * $(window).height();
-            i > n && $(this).addClass("more-padding"), i < n && $(this).removeClass("more-padding")
-        })
-    });
-</script>
 <script>
     var i, acc = document.getElementsByClassName("accordion-link");
-    for (i = 0; i < acc.length; i++) acc[i].addEventListener("click", function() {
+    for (i = 0; i < acc.length; i++)
+        acc[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var i = this.nextElementSibling;
         "block" === i.style.display ? i.style.display = "none" : i.style.display = "block"
